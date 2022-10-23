@@ -1,0 +1,378 @@
+@font-face {
+    font-family:'vazir' ;
+    src: url(../font/Vazir-Black.eot);
+    src: url(../font/Vazir-Black.ttf);
+    src: url(../font/Vazir-Black.woff2);
+    src: url(../font/Vazir-Bold.eot);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+    line-height:1.7em ;
+    font-family: "vazir",Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+    width:7px;
+    background-color:#ffffff;
+    
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0px -1px 2px rgb(255, 0, 212);
+    border-radius: 10px;
+  
+}
+::-webkit-scrollbar-thumb {
+    background:  rgb(255, 0, 212);
+    border-radius: 1px;
+    
+}
+.bg-pink{
+    background:  rgb(255, 0, 212);
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar{
+    display: flex;
+    padding: 1rem;
+   
+   
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar a{
+    color: white;
+}
+#navbar ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a{
+    padding: 0.75rem;  
+   }
+   
+#navbar ul {
+   margin-bottom: 0 !important ;
+    
+   }
+#navbar ul li a:hover{
+    
+    color: rgb(255, 0, 212);
+    border-radius: 5px;
+}
+
+#showcase {
+    background:#333 url('../img/img1.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+#showcase .showcase-content{
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px #0d1a3a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    }
+.profile-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+ .btn-showcase {
+    border:1px solid white;
+    background: #333;
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px 10px 5px 10px;
+    width: 100px;
+    height: 50px;
+    
+}
+.btn-showcase:hover{
+    border:1px solid white;
+    background: #333;
+    margin-top: 1rem;
+    width: 100px;
+    height: 50px;
+    
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px 10px 5px 10px;
+}
+.btn-showcase a{
+    color: #fff;
+}
+.btn-showcase a:hover{
+    color: rgb(255, 0, 212);
+}
+
+.btn-social{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aboutme-1{
+    padding: 15px;
+}
+.aboutme-1 h1{
+    padding-bottom: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-lg{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: white;
+}
+.btn-lg:hover{
+    color: rgb(255, 0, 212);
+}
+.showcase-content p{
+    padding-top: 5px;
+}
+
+.showcase-content p:hover{
+    padding-top: 5px;
+    color:rgb(255, 0, 212) ;
+    text-shadow: 0px 0px 5px #0d1a3a;
+}
+.btn-icon{
+    padding: 10px;
+}
+.button-container{
+    background: #000000;
+    height: 70px;
+    color: #fff;
+}
+.aboutme{
+    border: 1px solid #333;
+    margin: 30px;
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    text-align: right;
+    min-height: 200px;
+    box-shadow: 8px 8px 8px 8px #888888;
+}
+.col-md-6{
+    width: 50%;
+}
+.Skill{
+    min-height: 500px;
+}
+.Skill p{
+    text-align: left;
+}
+
+
+#MyProgress{
+    background-color:#000;
+    border-radius:13px;
+    padding:3px;
+   }
+   
+   #MyProgress > .html{
+    background-color:rgb(255, 0, 212) ;;
+    height:10px;
+    width: 80%;
+    border-radius:10px;
+    animation: mymove1 5s;
+   }
+   
+   #MyProgress > .sass{
+    background-color:rgb(255, 0, 212) ;;
+    height:10px;
+    width: 80%;
+    border-radius:10px;
+    animation: mymove5 5s;
+   }
+   #MyProgress > .css{
+    background-color:rgb(255, 0, 212) ;;
+    height:10px;
+    width: 60%;
+    border-radius:10px;
+    animation: mymove2 5s;
+   }
+   
+   #MyProgress > .bootstrap{
+    background-color:rgb(255, 0, 212) ;
+    height:10px;
+    width: 70%;
+    border-radius:10px;
+    animation: mymove3 5s;
+   }
+   #MyProgress > .js{
+    background-color:rgb(255, 0, 212) ;
+    height:10px;
+    width: 20%;
+    border-radius:10px;
+    animation: mymove4 5s;
+   }
+
+   #MyProgress > .jquery{
+    background-color:rgb(255, 0, 212) ;
+    height:10px;
+    width: 20%;
+    border-radius:10px;
+    animation: mymove6 5s;
+   }
+   @keyframes mymove1 {
+    from {width: 0px;}
+    to {width: 80%;}
+  }
+   @keyframes mymove2 {
+    from {width: 0px;}
+    to {width: 60%;}
+  }
+   @keyframes mymove3 {
+    from {width: 0px;}
+    to {width: 70%;}
+  }
+   @keyframes mymove4 {
+    from {width: 0px;}
+    to {width: 20%;}
+  }
+
+  @keyframes mymove5 {
+    from {width: 0px;}
+    to {width: 20%;}
+  }
+
+  @keyframes mymove6 {
+    from {width: 0px;}
+    to {width: 20%;}
+  }
+  
+.sample{
+    width: 100%;
+    height: 350px;
+}
+
+.sample-1:hover{
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+}
+.sample-1{
+    width: 100%;
+    height: 350px;
+    
+}
+.documents{
+   margin-top: 100px;
+}
+.work-experiences-1{
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.work-experiences{
+    margin-top: 100px;
+}
+.work-experiences-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.work-experiences-Description{
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+.contact-bg{
+    background: url('../img/contact-bg.jpg') no-repeat center center/cover ;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.form{
+    width: 60% ;
+    background: #fff;
+    height: 600px;
+    justify-self: center;
+  }
+  .contact-form{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+  }
+  .contact-input{
+      border: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      border-radius: 50px;
+  }
+.Specifications span{
+    padding-right: 3rem;
+    display: block;
+}
+.contact-icon{
+    padding-left: 5px;
+}
+#mtn-area{
+padding: 10px 15px 0 0;
+
+}
+.contact-btn{
+    margin: 15px 0px 0 0 ;
+    width: 70px;
+    color: rgb(15, 14, 14);
+    background: #f8f9fa;
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.contact-btn:hover{
+   
+    color: #fff;
+    background: rgb(255, 0, 212);
+    
+}
+.footer{
+    min-height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-social-footer {
+   justify-content: center;
+   display: flex;
+}
+.btn-icon-footer{
+color: #333;
+justify-content: center;
+align-items: center;
+}
